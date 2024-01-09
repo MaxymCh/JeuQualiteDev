@@ -1,0 +1,217 @@
+classDiagram
+    class Attaque {
+      +run()
+      +pause(long, int)
+      +toucheMur() boolean
+      +toucheJoueur() Joueur
+    }
+    class Boule {
+      +tireBoule(Joueur, ArrayList<Mur>, Hashtable<Connection,Joueur>)
+    }
+    class Jeu {
+      +SetConnection(Connection)
+      +Reception(Connection, Object)
+      +envoi(Connection, Object)
+      +Deconnection(Connection)
+    }
+    class JeuClient {
+      +SetConnection(Connection)
+      +Reception(Connection, Object)
+      +Deconnection(Connection)
+      +envoi(Object)
+    }
+    class JeuServeur {
+      +ArrayList<Joueur> lesjoueursdanslordre
+      +constructionMurs()
+      +nouveauLabelJeu(Label)
+      +envoi(Object)
+    }
+    class Joueur {
+      +String pseudo
+      +int numPerso
+      +int vie
+      +int sens
+      +int etape
+      +GainVie()
+      +PerteVie()
+      +EstMort() boolean
+      +departJoueur()
+      +initPerso(String, int, Hashtable<Connection,Joueur>, ArrayList<Mur>)
+      +action(int, Hashtable<Connection,Joueur>, ArrayList<Mur>)
+    }
+    class Label {
+      +int numLabel
+      +JLabel jLabel
+    }
+    class Mur {
+      +Mur()
+    }
+    class Objet {
+      +int posX
+      +int posY
+      +Label label
+      +toucheObjet(Objet) boolean
+    }
+	
+   class Controle {
+      +EvenementVue(Object , Object )
+      +EvenementEntreeJeu(Object)
+      +getLejeu() Jeu
+	+EvenementChoixJoueur(Object)
+	+SetConnection (Connection)
+	+EvenementModele(Object, String, Object)
+	+EvenementJeuServeur(String, Object)
+	+EvenementJeuClient(String, Object)
+	+EvenementArene(Object)
+    }
+    class Global {
+    }
+    class Arene {
+      +boolean client
+	+ajoutMur(JLabel)
+	+ajoutPanelMurs(JPanel)
+	+getJpnMurs() JPanel 
+	+ajoutJoueur(JLabel)
+	+ajoutModifJoueur(int, JLabel)
+	+ajoutChat(String)
+	+remplaceChat(String)
+	+getTxtChat() JTextArea
+	-initComponents()
+	-txtSaisieKeyPressed(KeyEvent)
+	-MainPane_KeyPressed(KeyEvent)
+    }
+    class ChoixJoueur {
+      +int numPerso
+      +Controle controle
+	+initComponents()
+	-lblPrecedentMouseClicked(MouseEvent)
+	-lblSuivantMouseClicked(MouseEvent)
+	-txtPseudoActionPerformed(ActionEvent)
+	-lblGoMouseClicked(MouseEvent)
+	-lblGoMouseEntered(MouseEvent)
+	-lblGoMouseExited(MouseEvent)
+	-lblSuivantMouseEntered(MouseEvent)
+	-lblSuivantMouseExited(MouseEvent)
+	-lblPrecedentMouseEntered(MouseEvent)
+	-lblPrecedentMouseExited(MouseEvent)
+	-lblPrecedent_Clic()
+	-lblGo_Clic()
+	-lblSuivant_Clic()
+	-affichePerso()
+	-souris_normale()
+	-souris_doigt()
+	    
+    }
+    class EntreeJeu {
+	-cmdServeur_clic()
+	-cmdClient_clic()
+	-cmdQuitter_clic()
+	-initComponents()
+	-cmdServeurMouseClicked(MouseEvent)
+	-cmdQuitterMouseClicked(MouseEvent)
+	-cmdConnecterMouseClicked(MouseEvent)
+    }
+    class ClientSocket {
+      +boolean connexionOK
+	+isConnexionOK() bool
+    }
+    class Connection{
+      +Object lerecepteur
+      +ObjectInputStream in
+      +ObjectOutputStream out
+	+run()
+	+envoi(Object)
+	
+    }
+    class ServeurSocket{
+      +Object lerecepteur
+      +ServerSocket serversocket
+	+run()
+    }
+
+    class UrbanMarginal{
+      +main(String[])
+	+getCtrl() Controle
+	+setCtrl(Controle) 
+    }
+
+    class Thread{
+    }
+    
+    %% Styling classes
+    class Attaque~color:red;~
+    class Boule~color:red;~
+    class Jeu~color:red;~
+    class JeuClient~color:red;~
+    class JeuServeur~color:red;~
+    class Joueur~color:red;~
+    class Label~color:red;~
+    class Mur~color:red;~
+    class Objet~color:red;~
+    
+
+    class Global~color:orange;~
+    class Controle~color:orange;~
+
+    
+    class Arene~color:blue;~
+     class ChoixJoueur~color:blue;~
+    class EntreeJeu~color:blue;~
+    
+    
+    class ClientSocket~color:green;~
+    class Connection~color:green;~
+    class ServeurSocket~color:green;~
+    class UrbanMarginal~color:green;~
+
+    
+    Attaque --|> Global
+    Attaque --|> Thread
+    Boule --|> Objet
+    Boule --|> Global
+    JeuClient --|> Jeu
+    JeuServeur --|> Jeu
+    JeuServeur --|> Global
+    Joueur --|> Objet
+    Joueur --|> Global
+    Mur --|> Objet
+    Mur --|> Global
+    Objet <-- Label
+
+    Attaque --> Joueur : 1 -attaquant
+    Attaque --> JeuServeur : 1 -jsrv
+    Attaque --> Mur : * -lesmurs
+    Attaque --> Joueur : * -lesjoueurs
+
+    Boule --> JeuServeur : 1 -jsrv
+
+    Joueur --> JeuServeur : 1 -jsrv
+    Joueur --> Boule : 1 -boulet
+    Joueur --> Label : 1 -message
+
+    JeuServeur --> Mur : * -lesmurs
+    JeuServeur --> Joueur : * -lesjoueursdanslordre
+    JeuServeur --> Joueur : * -lesjoueurs
+    
+    Arene --> Controle : 1 -controle
+    Arene --|> Global
+    ChoixJoueur --|> Global
+ChoixJoueur --> Controle : 1 -controle
+
+Controle --|> Global
+
+
+Controle --> EntreeJeu:1 -frmEntreeJeu
+Controle --> Jeu:1 -lejeu
+Controle --> Arene:1 -frmArene
+Controle --> ChoixJoueur: 1 -frmChoixJoueur
+Controle --> Connection:1 -connection
+
+EntreeJeu --> Controle :1 -controle
+UrbanMarginal --> Controle :1 -ctrl
+JeuClient --> Connection :1 -connexion
+
+ServeurSocket --|> Thread
+Connection --|> Thread
+
+

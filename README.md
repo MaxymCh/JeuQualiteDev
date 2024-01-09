@@ -11,7 +11,8 @@
 7. [Documentation](#documentation)
 8. [Dépannage](#dépannage)
 9. [Contributeurs](#contributeurs)
-10. [Licence](#licence)
+10. [Liste des Technologies](#liste-des-technologies)
+11. [Licence](#licence)
 
 ## Introduction
 Urban Marginal est un jeu client/serveur multijoueur en 2D construit sur le modèle MVC (Modèle/Vue/Contrôleur). Le but est de battre l’adversaire en tirant des boules d’énergies. Un chat est disponible pour discuter. Il existe trois personnages différents.
@@ -91,6 +92,37 @@ La documentation du projet Urban Marginal est disponible dans le dossier doc. El
 ## Contributeurs
 - FAUCHER Thomas
 - CHARPENTIER Maxym
+
+## Liste des Technologies
+
+Dans ce projet, nous employons plusieurs technologies clés pour assurer le développement efficace et robuste de notre application. Voici les détails des technologies principales utilisées :
+
+### Java
+- **Description** : Langage de programmation principal pour le développement de ce projet, offrant portabilité, sécurité et robustesse.
+- **Utilisation** : Utilisé pour écrire toute la logique métier, les services de backend, et l'interface utilisateur.
+
+### Modèle-Vue-Contrôleur (MVC)
+- **Description** : Modèle d'architecture logicielle pour séparer la logique métier de l'interface utilisateur.
+- **Utilisation** : Le modèle définit la structure des données, la vue gère l'affichage, et le contrôleur fait le lien entre les deux.
+
+### Swing
+- **Description** : Bibliothèque graphique pour Java, utilisée pour construire des interfaces graphiques interactives.
+- **Utilisation** : Employé pour créer tous les composants graphiques de l'application, y compris les fenêtres, les boutons et les champs de texte.
+
+### JUnit
+- **Description** : Framework de test unitaire pour Java.
+- **Utilisation** : Utilisé pour rédiger et exécuter des tests unitaires, assurant le bon fonctionnement des composants individuels.
+
+### Sockets
+- **Description** : Permettent la communication réseau entre machines en Java.
+- **Utilisation** : Gèrent la connexion réseau entre le serveur et les clients de l'application.
+
+### GitHub
+- **Description** : Plateforme de gestion de développement collaboratif et de contrôle de version basée sur Git.
+- **Utilisation** : Employé pour le versionnement du code, la collaboration, le suivi des problèmes et l'intégration continue.
+
+Cette combinaison de technologies garantit que notre application est fonctionnelle, fiable et maintenable. Nous choisissons des outils et pratiques adaptés aux exigences spécifiques de notre projet.
+
 
 ## Licence
 

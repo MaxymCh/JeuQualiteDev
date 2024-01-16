@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Bouml (http://bouml.free.fr/) -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="1628" height="732" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="1404" y="269" width="2" height="104" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="1252" y="371" width="154" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="1249" y="266" width="155" height="105" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="1327" y="272">Controle</text>
+	<line stroke="black" stroke-opacity="1" x1="1249" y1="276" x2="1404" y2="276" />
+	<line stroke="black" stroke-opacity="1" x1="1249" y1="280" x2="1404" y2="280" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="286">Controle()</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="295">EvenementVue(Object, Object) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="304">EvenementEntreeJeu(Object) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="313">getLejeu() : Jeu</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="322">EvenementChoixJoueur(Object) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="331">SetConnection(Connection) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="340">EvenementModele(Object, String, Object) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="349">EvenementJeuServeur(String, Object) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="358">EvenementJeuClient(String, Object) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="367">EvenementArene(Object) : void</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="1456" y="26" width="2" height="136" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="1252" y="160" width="206" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="1249" y="23" width="207" height="137" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="1353" y="29">EntreeJeu</text>
+	<line stroke="black" stroke-opacity="1" x1="1249" y1="33" x2="1456" y2="33" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="39">cmdConnecter : javax.swing.JButton</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="48">cmdQuitter : javax.swing.JButton</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="57">jLabel1 : javax.swing.JLabel</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="66">jLabel2 : javax.swing.JLabel</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="75">jLabel4 : javax.swing.JLabel</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="84">txtIP : javax.swing.JTextField</text>
+	<line stroke="black" stroke-opacity="1" x1="1249" y1="88" x2="1456" y2="88" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="94">EntreeJeu(Controle)</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="103">cmdServeur_clic() : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="112">cmdClient_clic() : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="121">cmdQuitter_clic() : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="130">initComponents() : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="139">cmdServeurMouseClicked(java.awt.event.MouseEvent) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="148">cmdQuitterMouseClicked(java.awt.event.MouseEvent) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1251" y="157">cmdConnecterMouseClicked(java.awt.event.MouseEvent) : void</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="1369" y="665" width="2" height="50" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="1251" y="713" width="120" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="1248" y="662" width="121" height="51" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" font-weight="bold" font-style="italic" text-anchor="middle" x="1309" y="668">Jeu</text>
+	<line stroke="black" stroke-opacity="1" x1="1248" y1="672" x2="1369" y2="672" />
+	<line stroke="black" stroke-opacity="1" x1="1248" y1="676" x2="1369" y2="676" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" font-style="italic" x="1250" y="682">SetConnection(Connection) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" font-style="italic" x="1250" y="691">Reception(Connection, Object) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1250" y="700">envoi(Connection, Object) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" font-style="italic" x="1250" y="709">Deconnection(Connection) : void</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="1220" y="298" width="2" height="40" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="1148" y="336" width="74" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="1145" y="295" width="75" height="41" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="1183" y="301">UrbanMarginal</text>
+	<line stroke="black" stroke-opacity="1" x1="1145" y1="305" x2="1220" y2="305" />
+	<line stroke="black" stroke-opacity="1" x1="1145" y1="309" x2="1220" y2="309" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-decoration="underline" x="1147" y="315">main(String) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-decoration="underline" x="1147" y="324">getCtrl() : Controle</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-decoration="underline" x="1147" y="333">setCtrl(Controle) : void</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="1548" y="402" width="2" height="236" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="1309" y="636" width="241" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="1306" y="399" width="242" height="237" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="1427" y="405">ChoixJoueur</text>
+	<line stroke="black" stroke-opacity="1" x1="1306" y1="409" x2="1548" y2="409" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="415">numPerso : int</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="424">jLabel2 : javax.swing.JLabel</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="433">lblGo : javax.swing.JLabel</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="442">lblPersonnage : javax.swing.JLabel</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="451">lblPrecedent : javax.swing.JLabel</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="460">lblSuivant : javax.swing.JLabel</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="469">txtPseudo : javax.swing.JTextField</text>
+	<line stroke="black" stroke-opacity="1" x1="1306" y1="473" x2="1548" y2="473" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="479">ChoixJoueur(Controle)</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="488">initComponents() : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="497">lblPrecedentMouseClicked(java.awt.event.MouseEvent) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="506">lblSuivantMouseClicked(java.awt.event.MouseEvent) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="515">txtPseudoActionPerformed(java.awt.event.ActionEvent) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="524">lblGoMouseClicked(java.awt.event.MouseEvent) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="533">lblGoMouseEntered(java.awt.event.MouseEvent) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="542">lblGoMouseExited(java.awt.event.MouseEvent) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="551">lblSuivantMouseEntered(java.awt.event.MouseEvent) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="560">lblSuivantMouseExited(java.awt.event.MouseEvent) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="569">lblPrecedentMouseEntered(java.awt.event.MouseEvent) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="578">lblPrecedentMouseExited(java.awt.event.MouseEvent) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="587">lblPrecedent_Clic() : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="596">lblGo_Clic() : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="605">lblSuivant_Clic() : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="614">affichePerso() : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="623">souris_normale() : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1308" y="632">souris_doigt() : void</text>
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="1397" y1="265" x2="1403" y2="259" />
+	<line stroke="black" stroke-opacity="1" x1="1397" y1="265" x2="1391" y2="259" />
+	<line stroke="black" stroke-opacity="1" x1="1397" y1="163" x2="1397" y2="265" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="1259" y1="374" x2="1252" y2="379" />
+	<line stroke="black" stroke-opacity="1" x1="1259" y1="374" x2="1264" y2="380" />
+	<line stroke="black" stroke-opacity="1" x1="1257" y1="661" x2="1259" y2="374" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="1248" y1="317" x2="1242" y2="311" />
+	<line stroke="black" stroke-opacity="1" x1="1248" y1="317" x2="1242" y2="323" />
+	<line stroke="black" stroke-opacity="1" x1="1223" y1="317" x2="1248" y2="317" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="1316" y1="398" x2="1322" y2="392" />
+	<line stroke="black" stroke-opacity="1" x1="1316" y1="398" x2="1310" y2="392" />
+	<line stroke="black" stroke-opacity="1" x1="1316" y1="374" x2="1316" y2="398" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="1397" y1="374" x2="1391" y2="380" />
+	<line stroke="black" stroke-opacity="1" x1="1397" y1="374" x2="1403" y2="380" />
+	<line stroke="black" stroke-opacity="1" x1="1397" y1="398" x2="1397" y2="374" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="1281" y1="661" x2="1287" y2="655" />
+	<line stroke="black" stroke-opacity="1" x1="1281" y1="661" x2="1275" y2="654" />
+	<line stroke="black" stroke-opacity="1" x1="1282" y1="374" x2="1281" y2="661" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="1258" y1="163" x2="1252" y2="169" />
+	<line stroke="black" stroke-opacity="1" x1="1258" y1="163" x2="1264" y2="168" />
+	<line stroke="black" stroke-opacity="1" x1="1259" y1="265" x2="1258" y2="163" />
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="1613" y="191" width="2" height="182" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="1435" y="371" width="180" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="1432" y="188" width="181" height="183" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="1523" y="194">Arene</text>
+	<line stroke="black" stroke-opacity="1" x1="1432" y1="198" x2="1613" y2="198" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1434" y="204">client : boolean</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1434" y="213">jpnJeu : javax.swing.JPanel</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1434" y="222">jpnMurs : javax.swing.JPanel</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1434" y="231">jspChat : javax.swing.JScrollPane</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1434" y="240">lblFond : javax.swing.JLabel</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1434" y="249">txtChat : javax.swing.JTextArea</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1434" y="258">txtSaisie : javax.swing.JTextField</text>
+	<line stroke="black" stroke-opacity="1" x1="1432" y1="262" x2="1613" y2="262" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1434" y="268">Arene(String, Controle)</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1434" y="277">ajoutMur(JLabel) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1434" y="286">ajoutPanelMurs(JPanel) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1434" y="295">getJpnMurs() : JPanel</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1434" y="304">ajoutJoueur(JLabel) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1434" y="313">ajoutModifJoueur(int, JLabel) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1434" y="322">ajoutChat(String) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1434" y="331">remplaceChat(String) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1434" y="340">getTxtChat() : JTextArea</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1434" y="349">initComponents() : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1434" y="358">txtSaisieKeyPressed(java.awt.event.KeyEvent) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1434" y="367">MainPane_KeyPressed(java.awt.event.KeyEvent) : void</text>
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="1431" y1="365" x2="1425" y2="359" />
+	<line stroke="black" stroke-opacity="1" x1="1431" y1="365" x2="1425" y2="371" />
+	<line stroke="black" stroke-opacity="1" x1="1407" y1="365" x2="1431" y2="365" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="1407" y1="341" x2="1413" y2="347" />
+	<line stroke="black" stroke-opacity="1" x1="1407" y1="341" x2="1413" y2="335" />
+	<line stroke="black" stroke-opacity="1" x1="1431" y1="341" x2="1407" y2="341" />
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="1197" y="661" width="2" height="58" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="1079" y="717" width="120" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="1076" y="658" width="121" height="59" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="1137" y="664">JeuClient</text>
+	<line stroke="black" stroke-opacity="1" x1="1076" y1="668" x2="1197" y2="668" />
+	<line stroke="black" stroke-opacity="1" x1="1076" y1="672" x2="1197" y2="672" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1078" y="678">JeuClient(Controle)</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1078" y="687">SetConnection(Connection) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1078" y="696">Reception(Connection, Object) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1078" y="705">Deconnection(Connection) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1078" y="714">envoi(Object) : void</text>
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="1200" y1="686" x2="1241" y2="686" />
+	<line stroke="#000000" stroke-opacity="1" x1="1247" y1="686" x2="1241" y2="680" />
+	<line stroke="#000000" stroke-opacity="1" x1="1247" y1="686" x2="1241" y2="692" />
+	<line stroke="#000000" stroke-opacity="1" x1="1241" y1="680" x2="1241" y2="692" />
+</g>
+<g>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="770" y="163">#label</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1286" y="657">-lejeu</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1050" y="536">-lesjoueursdanslordre</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1264" y="382">#ctrl</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="342" y="633">-lesmurs</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1413" y="336">-controle</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1109" y="547">-jsrv</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="515" y="390">-attaquant</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1262" y="173">-frmEntreeJeu</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1393" y="360">-frmArene</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1402" y="382">-controle</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="968" y="585">-jsrv</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="385" y="585">-lesmurs</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1027" y="547">-jsrv</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="44" y="274">-boulet</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-decoration="underline" x="1229" y="312">-ctrl</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1320" y="393">-frmChoixJoueur</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="835" y="211">-message</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1402" y="260">-controle</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="659" y="565" width="2" height="58" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="407" y="621" width="254" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="404" y="562" width="255" height="59" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="532" y="568">Attaque</text>
+	<line stroke="black" stroke-opacity="1" x1="404" y1="572" x2="659" y2="572" />
+	<line stroke="black" stroke-opacity="1" x1="404" y1="576" x2="659" y2="576" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="406" y="582">Attaque(Joueur, JeuServeur, ArrayList&lt;Mur&gt;, Hashtable&lt;Connection,Joueur&gt;)</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="406" y="591">run() : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="406" y="600">pause(long, int) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="406" y="609">toucheMur() : boolean</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="406" y="618">toucheJoueur() : Joueur</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="1054" y="263" width="2" height="262" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="557" y="523" width="499" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="554" y="260" width="500" height="263" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="804" y="266">Joueur</text>
+	<line stroke="black" stroke-opacity="1" x1="554" y1="270" x2="1054" y2="270" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="276">pseudo : String</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="285">numPerso : int</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="294">vie : int</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="303">sens : int</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="312">etape : int</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-decoration="underline" x="556" y="321">maxvie : int =  10 </text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-decoration="underline" x="556" y="330">gain : int =  1 </text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-decoration="underline" x="556" y="339">perte : int =  2 </text>
+	<line stroke="black" stroke-opacity="1" x1="554" y1="343" x2="1054" y2="343" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="349">Joueur(JeuServeur)</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="358">GainVie() : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="367">PerteVie() : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="376">EstMort() : boolean</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="385">departJoueur() : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="394">getEtape() : int</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="403">getBoulet() : Boule</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="412">getNumPerso() : int</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="421">getVie() : int</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="430">getJsrv() : JeuServeur</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="439">getPseudo() : String</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="448">initPerso(String, int, Hashtable&lt;Connection,Joueur&gt;, ArrayList&lt;Mur&gt;) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="457">getSens() : int</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="466">getMessage() : Label</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="475">toucheJoueur(Hashtable&lt;Connection,Joueur&gt;) : boolean</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="484">toucheMur(ArrayList&lt;Mur&gt;) : boolean</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="493">premierePosition(Hashtable&lt;Connection,Joueur&gt;, ArrayList&lt;Mur&gt;) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="502">affiche(String, int) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="511">deplace(int, int, int, int, int, Hashtable&lt;Connection,Joueur&gt;, ArrayList&lt;Mur&gt;) : int</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="556" y="520">action(int, Hashtable&lt;Connection,Joueur&gt;, ArrayList&lt;Mur&gt;) : void</text>
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="533" y1="561" x2="534" y2="394" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="553" y1="393" x2="546" y2="387" />
+	<line stroke="black" stroke-opacity="1" x1="553" y1="393" x2="547" y2="399" />
+	<line stroke="black" stroke-opacity="1" x1="534" y1="394" x2="553" y2="393" />
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="1111" y="556" width="2" height="76" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="993" y="630" width="120" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="990" y="553" width="121" height="77" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="1051" y="559">JeuServeur</text>
+	<line stroke="black" stroke-opacity="1" x1="990" y1="563" x2="1111" y2="563" />
+	<line stroke="black" stroke-opacity="1" x1="990" y1="567" x2="1111" y2="567" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="992" y="573">JeuServeur(Controle)</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="992" y="582">SetConnection(Connection) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="992" y="591">Reception(Connection, Object) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="992" y="600">Deconnection(Connection) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="992" y="609">constructionMurs() : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="992" y="618">nouveauLabelJeu(Label) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="992" y="627">envoi(Object) : void</text>
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="1225" y1="591" x2="1225" y2="687" />
+</g>
+<g>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="1053" y="543">&lt;&lt;ArrayList&gt;&gt;</text>
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="1045" y1="526" x2="1039" y2="532" />
+	<line stroke="black" stroke-opacity="1" x1="1045" y1="526" x2="1051" y2="531" />
+	<line stroke="black" stroke-opacity="1" x1="1047" y1="552" x2="1045" y2="526" />
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="1225" y1="687" x2="1241" y2="686" />
+	<line stroke="#000000" stroke-opacity="1" x1="1247" y1="686" x2="1240" y2="680" />
+	<line stroke="#000000" stroke-opacity="1" x1="1247" y1="686" x2="1241" y2="692" />
+	<line stroke="#000000" stroke-opacity="1" x1="1240" y1="680" x2="1241" y2="692" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="989" y1="590" x2="983" y2="584" />
+	<line stroke="black" stroke-opacity="1" x1="989" y1="590" x2="983" y2="596" />
+	<line stroke="black" stroke-opacity="1" x1="662" y1="590" x2="989" y2="590" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="1023" y1="552" x2="1028" y2="545" />
+	<line stroke="black" stroke-opacity="1" x1="1023" y1="552" x2="1016" y2="546" />
+	<line stroke="black" stroke-opacity="1" x1="1021" y1="526" x2="1023" y2="552" />
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="1114" y1="590" x2="1225" y2="591" />
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="375" y="565" width="2" height="58" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="303" y="621" width="74" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="300" y="562" width="75" height="59" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="338" y="568">Mur</text>
+	<line stroke="black" stroke-opacity="1" x1="300" y1="572" x2="375" y2="572" />
+	<line stroke="black" stroke-opacity="1" x1="300" y1="576" x2="375" y2="576" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="302" y="582">Mur()</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="309" y="264" width="2" height="32" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="75" y="294" width="236" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="72" y="261" width="237" height="33" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="191" y="267">Boule</text>
+	<line stroke="black" stroke-opacity="1" x1="72" y1="271" x2="309" y2="271" />
+	<line stroke="black" stroke-opacity="1" x1="72" y1="275" x2="309" y2="275" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="74" y="281">Boule(JeuServeur)</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="74" y="290">tireBoule(Joueur, ArrayList&lt;Mur&gt;, Hashtable&lt;Connection,Joueur&gt;) : void</text>
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="1057" y1="393" x2="1081" y2="394" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="1051" y1="633" x2="1051" y2="658" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="1051" y1="658" x2="336" y2="658" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="1104" y1="552" x2="1110" y2="546" />
+	<line stroke="black" stroke-opacity="1" x1="1104" y1="552" x2="1098" y2="546" />
+	<line stroke="black" stroke-opacity="1" x1="1104" y1="78" x2="1104" y2="552" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="192" y1="322" x2="25" y2="322" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="25" y1="322" x2="25" y2="78" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="192" y1="297" x2="192" y2="322" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="1081" y1="394" x2="1080" y2="102" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="71" y1="279" x2="65" y2="273" />
+	<line stroke="black" stroke-opacity="1" x1="71" y1="279" x2="65" y2="285" />
+	<line stroke="black" stroke-opacity="1" x1="49" y1="279" x2="71" y2="279" />
+</g>
+<g>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="371" y="598">&lt;&lt;ArrayList&gt;&gt;</text>
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="378" y1="590" x2="384" y2="596" />
+	<line stroke="black" stroke-opacity="1" x1="378" y1="590" x2="384" y2="584" />
+	<line stroke="black" stroke-opacity="1" x1="403" y1="590" x2="378" y2="590" />
+</g>
+<g>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="313" y="646">&lt;&lt;ArrayList&gt;&gt;</text>
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="336" y1="624" x2="330" y2="630" />
+	<line stroke="black" stroke-opacity="1" x1="336" y1="624" x2="342" y2="630" />
+	<line stroke="black" stroke-opacity="1" x1="336" y1="658" x2="336" y2="624" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="49" y1="102" x2="49" y2="279" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="25" y1="78" x2="1104" y2="78" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="1080" y1="102" x2="49" y2="102" />
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="385" y="128" width="2" height="82" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="293" y="208" width="94" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="290" y="125" width="95" height="83" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" font-weight="bold" font-style="italic" text-anchor="middle" x="338" y="131">Objet</text>
+	<line stroke="black" stroke-opacity="1" x1="290" y1="135" x2="385" y2="135" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="292" y="141">posX : int</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="292" y="150">posY : int</text>
+	<line stroke="black" stroke-opacity="1" x1="290" y1="154" x2="385" y2="154" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="292" y="160">getPosX() : int</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="292" y="169">getPosY() : int</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="292" y="178">getLabel() : Label</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="292" y="187">setPosX(int) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="292" y="196">setPosY(int) : void</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="292" y="205">toucheObjet(Objet) : boolean</text>
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="192" y1="237" x2="336" y2="237" />
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="911" y1="237" x2="336" y2="237" />
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="336" y1="561" x2="336" y2="217" />
+	<line stroke="#000000" stroke-opacity="1" x1="336" y1="211" x2="330" y2="217" />
+	<line stroke="#000000" stroke-opacity="1" x1="336" y1="211" x2="342" y2="217" />
+	<line stroke="#000000" stroke-opacity="1" x1="330" y1="217" x2="342" y2="217" />
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="336" y1="237" x2="336" y2="217" />
+	<line stroke="#000000" stroke-opacity="1" x1="336" y1="211" x2="330" y2="217" />
+	<line stroke="#000000" stroke-opacity="1" x1="336" y1="211" x2="342" y2="217" />
+	<line stroke="#000000" stroke-opacity="1" x1="330" y1="217" x2="342" y2="217" />
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="893" y1="259" x2="911" y2="237" />
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="192" y1="260" x2="192" y2="237" />
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="336" y1="237" x2="336" y2="217" />
+	<line stroke="#000000" stroke-opacity="1" x1="336" y1="211" x2="330" y2="217" />
+	<line stroke="#000000" stroke-opacity="1" x1="336" y1="211" x2="342" y2="217" />
+	<line stroke="#000000" stroke-opacity="1" x1="330" y1="217" x2="342" y2="217" />
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="861" y="137" width="2" height="64" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="799" y="199" width="64" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="796" y="134" width="65" height="65" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="829" y="140">Label</text>
+	<line stroke="black" stroke-opacity="1" x1="796" y1="144" x2="861" y2="144" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" text-decoration="underline" x="798" y="150">nbLabel : int</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="798" y="159">numLabel : int</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="798" y="168">jLabel : JLabel</text>
+	<line stroke="black" stroke-opacity="1" x1="796" y1="172" x2="861" y2="172" />
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="798" y="178">Label(int, JLabel)</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="798" y="187">getNumLabel() : int</text>
+	<text font-family="Helvetica" font-size="5" fill="#000000" xml:space="preserve" x="798" y="196">getjLabel() : JLabel</text>
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="829" y1="202" x2="823" y2="208" />
+	<line stroke="black" stroke-opacity="1" x1="829" y1="202" x2="835" y2="208" />
+	<line stroke="black" stroke-opacity="1" x1="829" y1="259" x2="829" y2="202" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="795" y1="168" x2="789" y2="162" />
+	<line stroke="black" stroke-opacity="1" x1="795" y1="168" x2="789" y2="174" />
+	<line stroke="black" stroke-opacity="1" x1="388" y1="168" x2="795" y2="168" />
+</g>
+</svg>

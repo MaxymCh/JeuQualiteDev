@@ -215,3 +215,18 @@ ServeurSocket --|> Thread
 Connection --|> Thread
 
 
+
+
+sequenceDiagram
+    participant Controle as Controle
+    participant JeuClient as JeuClient
+    participant Jeu as Jeu
+    participant ChoixJoueur as ChoixJoueur
+    participant Arene as Arene
+    participant Connection as Connection
+
+    Controle->>+JeuClient: envoi(info)
+    JeuClient->>+Jeu: envoi(connexion, info)
+    Jeu->>Connection: envoi(info)
+    Controle->>ChoixJoueur: dispose()
+    Controle->>Arene: setVisible(true)

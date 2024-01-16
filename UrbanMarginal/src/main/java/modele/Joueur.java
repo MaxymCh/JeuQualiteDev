@@ -76,6 +76,11 @@ public class Joueur extends Objet implements Global{
         return boulet;
     }
 
+    public Joueur setBoulet(Boule boulet) {
+        this.boulet = boulet;
+        return this;
+    }
+
     public int getNumPerso() {
         return numPerso;
     }

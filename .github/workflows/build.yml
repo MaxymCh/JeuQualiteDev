@@ -16,8 +16,7 @@ jobs:
       with:
         java-version: 11
 
-    - name: Change to UrbanMarginal directory
-      run: cd UrbanMarginal
-
-    - name: Run Maven test
-      run: mvn test
+    - name: Run Maven test in UrbanMarginal
+      run: |
+        cd UrbanMarginal
+        mvn test

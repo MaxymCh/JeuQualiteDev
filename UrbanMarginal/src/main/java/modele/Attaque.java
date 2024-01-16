@@ -100,7 +100,7 @@ public class Attaque extends Thread implements Global {
         }
     }
     
-    private boolean toucheMur()
+    public boolean toucheMur()
     {
          for(Mur unmur : lesmurs)
          {
@@ -110,7 +110,7 @@ public class Attaque extends Thread implements Global {
         return false;
     }
     
-    private Joueur toucheJoueur()
+    public Joueur toucheJoueur()
     {
         for(Joueur unjoueur : lesjoueurs.values())
         {

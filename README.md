@@ -38,7 +38,7 @@ Lancez une seconde session et cliquez sur Connect (session client).
 2. **Compiler le Projet**:
    Naviguez dans le dossier du projet et compilez les sources Java. Par exemple :
    ``` sh
-   javac -d bin -sourcepath UrbanMarginal/src UrbanMarginal/src/**/*.java
+   javac -d bin -sourcepath UrbanMarginal/src UrbanMarginal/src/main/java/**/*.java
    ```
 
    Cela compilera tous les fichiers `.java` dans le projet.
@@ -47,7 +47,7 @@ Lancez une seconde session et cliquez sur Connect (session client).
 
 #### Lancement du Jeu
 
-1. Naviguez dans le dossier `UrbanMarginal/src`.
+1. Naviguez dans le dossier `UrbanMarginal/src/main/java`.
 2. Lancez le jeu :
 
    ```sh

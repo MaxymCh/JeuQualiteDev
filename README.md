@@ -12,7 +12,8 @@
 8. [Dépannage](#dépannage)
 9. [Contributeurs](#contributeurs)
 10. [Liste des Technologies](#liste-des-technologies)
-11. [Licence](#licence)
+11. [Lancer les tests](#lancer-les-tests)
+12. [Licence](#licence)
 
 ## Introduction
 Urban Marginal est un jeu client/serveur multijoueur en 2D construit sur le modèle MVC (Modèle/Vue/Contrôleur). Le but est de battre l’adversaire en tirant des boules d’énergies. Un chat est disponible pour discuter. Il existe trois personnages différents.
@@ -41,16 +42,6 @@ Lancez une seconde session et cliquez sur Connect (session client).
    ```
 
    Cela compilera tous les fichiers `.java` dans le projet.
-   
-2. **Lancer les tests**:
-  Installer Maven avec les liens ci-dessous :
-      https://maven.apache.org/download.cgi
-      https://maven.apache.org/install.html
-
-  Se placer au niveau du pom.xml dans JeuQualiteDev/UrbanMarginal et faire
-   ``` sh
-   mvn clean install
-   ```
 
 ### Lancement du Serveur et du Jeu
 
@@ -132,6 +123,24 @@ Dans ce projet, nous employons plusieurs technologies clés pour assurer le dév
 - **Utilisation** : Employé pour le versionnement du code, la collaboration, le suivi des problèmes et l'intégration continue.
 
 Cette combinaison de technologies garantit que notre application est fonctionnelle, fiable et maintenable. Nous choisissons des outils et pratiques adaptés aux exigences spécifiques de notre projet.
+
+
+# Lancement des tests
+
+## Installation Maven
+
+  Installer Maven avec les liens ci-dessous :
+      https://maven.apache.org/download.cgi
+      https://maven.apache.org/install.html
+
+## Lancer les tests
+
+  Se placer au niveau du pom.xml dans JeuQualiteDev/UrbanMarginal et faire
+   ``` sh
+   mvn clean install
+   ```
+
+
 
 
 ## Licence

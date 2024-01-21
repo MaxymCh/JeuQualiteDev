@@ -1,0 +1,22 @@
+name: Java CI on Develop
+
+on:
+  push:
+    branches: [ develop ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v1
+      with:
+        java-version: 11
+
+    - name: Run Maven test in UrbanMarginal
+      run: |
+        cd UrbanMarginal
+        mvn test

@@ -41,6 +41,16 @@ Lancez une seconde session et cliquez sur Connect (session client).
    ```
 
    Cela compilera tous les fichiers `.java` dans le projet.
+   
+2. **Lancer les tests**:
+  Installer Maven avec les liens ci-dessous :
+      https://maven.apache.org/download.cgi
+      https://maven.apache.org/install.html
+
+  Se placer au niveau du pom.xml dans JeuQualiteDev/UrbanMarginal et faire
+   ``` sh
+   mvn clean install
+   ```
 
 ### Lancement du Serveur et du Jeu
 
